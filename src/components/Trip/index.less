@@ -1,0 +1,35 @@
+.Trip {
+  :global {
+    flex-direction: column;
+    align-items: flex-start;
+    .ant-statistic {
+      .ant-statistic-title,
+      .ant-statistic-content {
+        text-align: left;
+        line-height: 1;
+      }
+      .ant-statistic-title {
+        font-size: 13px;
+      }
+      .ant-statistic-content-value {
+        font-size: 18px;
+      }
+    }
+    .box {
+      .duration-distance,
+      .timeline {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0;
+
+        .ant-statistic {
+          width: 200px;
+
+          & + .ant-statistic {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
